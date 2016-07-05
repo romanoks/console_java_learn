@@ -1,5 +1,7 @@
 package Main;
 
+import ext.Audi;
+
 import java.util.Random;
 
 /**
@@ -74,5 +76,10 @@ public class main {
         func.printMark();
         func.printWhilesCircle("While");
         func.printWhilesCircle("do");
+        Audi audi = new Audi();
+        audi.printColor();
+        if(audi.drive()){
+            System.out.println("Let's go!!! Driver Driving good car!!!");
+        }
     }
 }
