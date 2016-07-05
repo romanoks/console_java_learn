@@ -36,6 +36,7 @@ public class main {
 
         int i = 0;
         if (flag.equals("While")) {
+            System.out.println("While circle \n\n");
             while (mark.length > i) {
                 if (mark[i] >= 1 && mark[i] < 31) {
                     System.out.println("Bad mark!");
@@ -47,6 +48,7 @@ public class main {
                 ++i;
             }
         }else {
+            System.out.println("DoWhile circle \n\n");
              do{
                     if (mark[i] >= 1 && mark[i] < 31) {
                         System.out.println("Bad mark!");
@@ -68,6 +70,9 @@ public class main {
         System.out.println("Let's go!!!");
         main func = new main();
         func.addMember();
+        System.out.println("For circle \n\n");
         func.printMark();
+        func.printWhilesCircle("While");
+        func.printWhilesCircle("do");
     }
 }
