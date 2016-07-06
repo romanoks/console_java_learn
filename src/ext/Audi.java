@@ -18,4 +18,8 @@ public class Audi extends detail {
        } else return false;
     }
 
+    public boolean drive2(){
+        return super.drive();
+    }
+
 }

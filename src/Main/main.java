@@ -1,13 +1,16 @@
 package Main;
 
 import ext.Audi;
+import ext.arrayConstructor;
+import interf.printWords;
+import interf.voice;
 
 import java.util.Random;
 
 /**
- * Created by User on 04.07.2016.
+ *  .class  we can get information about this class (Name, constructor, annotation etc)
  */
-public class main {
+public class main implements printWords, voice {
     private int [] mark = new int[1000];
     Random rand = new Random();
 
@@ -70,16 +73,48 @@ public class main {
 
     public static void main (String [] args){
         System.out.println("Let's go!!!");
+        Class func2 = main.class;
         main func = new main();
-        func.addMember();
-        System.out.println("For circle \n\n");
-        func.printMark();
-        func.printWhilesCircle("While");
-        func.printWhilesCircle("do");
+        // * .class  we can get information about this class (Name, constructor, annotation etc)
+        //func.addMember();
+        //System.out.println("For circle \n\n");
+        //func.printMark();
+        //func.printWhilesCircle("While");
+        //func.printWhilesCircle("do");
         Audi audi = new Audi();
+        audi.setColor("Green");
         audi.printColor();
         if(audi.drive()){
             System.out.println("Let's go!!! Driver Driving good car!!!");
         }
+
+        arrayConstructor arr = new arrayConstructor();
+        arrayConstructor arr2 = new arrayConstructor(1);
+        arr.printMark();
+        arr2.printWhilesCircle("While");
+
+        func.printInt(98);
+        func.printCalabaration("Fogotten");
+        if (func.isDone(75, "Test")){
+            System.out.println("Good Boy/Girl!");
+        }else System.out.println("Bad Boy/Girl!");
+    }
+
+    @Override
+    public void printCalabaration(String word1) {
+        System.out.println(word1);
+    }
+
+    @Override
+    public void printInt(int iner) {
+        System.out.println(iner);
+    }
+
+    @Override
+    public boolean isDone(int perCent, String task) {
+        if(perCent > 68 || task.equals("True")){
+            return true;
+        } else
+            return false;
     }
 }

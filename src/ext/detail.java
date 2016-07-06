@@ -1,7 +1,10 @@
 package ext;
 
 /**
- * Created by User on 05.07.2016.
+ * public all user see method or variable
+ * private only class can use method or variable
+ * protected class and extend's class can use
+ * default can use in package
  */
 public class detail {
     public String getColor() {
@@ -12,7 +15,7 @@ public class detail {
         this.color = color;
     }
 
-    protected String color = "White";
+    private String color = "White";
 
     public boolean isMashine() {
         return mashine;
