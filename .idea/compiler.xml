@@ -17,6 +17,21 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="console_java" />
+        <module name="console_java_learn" />
+        <module name="Java Education" />
+      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="console" target="1.5" />
+      <module name="console_java" target="1.5" />
+      <module name="console_java_learn" target="1.5" />
+      <module name="Java Education" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

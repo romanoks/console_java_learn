@@ -65,4 +65,11 @@ public class colectionUse {
     Map mapB = new HashMap<String,Class>();
     Map mapC = new LinkedHashMap<String, Object>();
 
+
+   public void example(){
+     listA.add(1);
+     listB.add(5);
+     setA.add("Foot");
+
+   }
 }
