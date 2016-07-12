@@ -24,7 +24,6 @@
         <processorPath useClasspath="true" />
         <module name="console_java" />
         <module name="console_java_learn" />
-        <module name="Java Education" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
