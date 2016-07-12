@@ -1,0 +1,6 @@
+#surefire
+#Tue Jul 12 22:16:13 MSK 2016
+user.dir=/home/raks/console_java_learn
+idea.version=14.1.7
+localRepository=/home/raks/.m2/repository
+basedir=/home/raks/console_java_learn
