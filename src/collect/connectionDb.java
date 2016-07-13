@@ -16,11 +16,14 @@ public class connectionDb {
             System.out.println(e.getMessage());
         }
         try {
-            dbConnection = DriverManager.getConnection("jdbc:mysql://hostname:port/dbname","username", "password");
+            dbConnection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/learn","root", "root123");
+            System.out.println("Connected to DB!");
             return dbConnection;
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
         return dbConnection;
     }
+
+
 }
