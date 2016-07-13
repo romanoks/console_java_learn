@@ -13,9 +13,10 @@ public class main {
         //connectionDb connect = new connectionDb();
         //connect.getDBConnection();
         ImplementsUserDAO dev = new ImplementsUserDAO();
-        dev.insertRow("Jake","Human","hum@gmail.com","+3789 85 56545","tractor");
+        //dev.insertRow("Jake","Human","hum@gmail.com","+3789 85 56545","tractor");
+        dev.deleteUser(1);
         dev.allRows();
-        dev.updateRow("Gerg",1);
+        dev.updateRow("Jeramy",2);
         dev.allRows();
     }
 }

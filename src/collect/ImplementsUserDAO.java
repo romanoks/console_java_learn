@@ -104,4 +104,17 @@ public class ImplementsUserDAO implements UserDAO{
             }
         }
     }
+
+    public void deleteUser(int id){
+        try {
+            dbConn = connectionDb.getDBConnection();
+            stmt = dbConn.prepareStatement(deleteRow);
+            stmt.setInt(1, id);
+            stmt.execute();
+
+            dbConn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
