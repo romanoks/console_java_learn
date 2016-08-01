@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Java Education:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="SpringSelfeduc.war">
+      <element id="artifact" artifact-name="Java Education:war exploded" />
+    </root>
+  </artifact>
+</component>
