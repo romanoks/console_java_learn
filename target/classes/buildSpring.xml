@@ -6,6 +6,6 @@
         <property name="message" value="Hello Spring! How are you?"/>
     </bean>
     <bean id="writter" class="consoleAppTest.writterLog">
-        <property name="logString" value=""/>
+        <property name="logString" value="Start App main"/>
     </bean>
 </beans>

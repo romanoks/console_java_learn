@@ -17,6 +17,7 @@ public class main {
         System.out.println(context.getDisplayName());
         writterLog logObj = (writterLog) context.getBean("writter");
         logObj.getLogString();
+        
         for (String name : context.getBeanDefinitionNames()) {
             System.out.println( name );
         }
